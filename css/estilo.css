@@ -1,0 +1,28 @@
+.encabezado{
+    background-color: #116B11;
+    padding: 15px;
+}
+
+.encabezado h1{
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    color: #F7EB3B;
+    font-size: 90px;
+}
+
+nav{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+nav a{
+    color: #FFF;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color:#F7EB3B;
+    text-decoration: underline;
+    font-size: 17px;
+}
