@@ -26,3 +26,29 @@ nav a:hover{
     text-decoration: underline;
     font-size: 17px;
 }
+#imghome{
+    width: 100%;
+    height: auto;
+    margin-right: 100px;
+    margin-left: 5px;
+}
+
+#parrafohome{
+    text-align: justify;
+    width: 60%;
+    border: 3px solid green;
+    padding: 10px;
+    font-size: 2vw;
+    margin: 50px 40px 40px 100px;
+    
+}
+.redes{
+    width: 2vw;
+    padding: 1.5%;
+    margin: 4px 4px 5px 4px;
+}
+footer{
+    text-align: center;
+    margin-top: 4vw;
+    background-color: #116B11;
+}
