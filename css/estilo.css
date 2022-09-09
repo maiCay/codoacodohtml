@@ -52,3 +52,13 @@ footer{
     margin-top: 4vw;
     background-color: #116B11;
 }
+.boton-form{ 
+    background-color: #116B11;
+    justify-content: center;
+    width: 100%;
+    border: #FFF;
+    color: #FFF;
+} 
+.formulario{
+    text-align: center;
+}
