@@ -7,10 +7,12 @@
     text-align: center;
     font-family: 'Caveat', cursive;
     color: #F7EB3B;
-    font-size: 90px;
+    font-size: 5rem;
 }
 
 nav{
+    margin-top: 4px;
+    padding: 2px;
     text-transform: uppercase;
     text-align: center;
 }
@@ -61,4 +63,54 @@ footer{
 } 
 .formulario{
     text-align: center;
+}
+
+
+/*Estilos para pagina about*/
+
+.center{
+    text-align: center;
+    font-size: 2em;
+}
+
+.div-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 95vw;
+    height: 20%;
+    margin: 10px auto;
+    padding: 15px;
+    gap: 15px;
+}
+
+.img-ab{
+    width: 40%;
+}
+
+.fig-img{
+   text-align: justify;
+}
+
+.lista-senderos{
+    list-style-type: square;
+    margin-top: 5px;
+    margin-left: 22px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .div-img {
+        flex-direction: column;
+    }
+
+    .div-reverse{
+        flex-direction: column-reverse;
+    }
+
+    .img-ab{
+        width: 100%;
+    }
+
 }
