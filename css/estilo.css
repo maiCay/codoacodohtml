@@ -7,10 +7,12 @@
     text-align: center;
     font-family: 'Caveat', cursive;
     color: #F7EB3B;
-    font-size: 90px;
+    font-size: 5rem;
 }
 
 nav{
+    margin-top: 4px;
+    padding: 2px;
     text-transform: uppercase;
     text-align: center;
 }
@@ -42,7 +44,7 @@ footer{
     margin-top: 4vw;
     background-color: #116B11;
 }
-
+/*ajustes en home grid*/
 .redes:hover{
     color:#7a7a78;
     width: 23px;
@@ -71,6 +73,21 @@ footer{
     width: 100%;
     height: auto;
 }
+.api {
+    background: #ffffff;
+    text-align: center;
+    font-size: 2rem;
+}
+.boton-form{ 
+    background-color: #116B11;
+    justify-content: center;
+    width: 100%;
+    border: #FFF;
+    color: #FFF;
+} 
+.formulario{
+    text-align: center;
+}
 .formulario{
     margin: 10%;
     background-color: #c9dde6;
@@ -79,8 +96,52 @@ footer{
     text-align: center;
     
 }
-.api {
-    background: #ffffff;
+
+/*Estilos para pagina about*/
+
+.center{
     text-align: center;
-    font-size: 2rem;
+    font-size: 2em;
+}
+
+.div-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 95vw;
+    height: 20%;
+    margin: 10px auto;
+    padding: 15px;
+    gap: 15px;
+}
+
+.img-ab{
+    width: 40%;
+}
+
+.fig-img{
+   text-align: justify;
+}
+
+.lista-senderos{
+    list-style-type: square;
+    margin-top: 5px;
+    margin-left: 22px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .div-img {
+        flex-direction: column;
+    }
+
+    .div-reverse{
+        flex-direction: column-reverse;
+    }
+
+    .img-ab{
+        width: 100%;
+    }
+
 }
