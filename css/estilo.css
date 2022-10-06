@@ -28,21 +28,11 @@ nav a:hover{
     text-decoration: underline;
     font-size: 17px;
 }
-#imghome{
-    width: 100%;
-    height: auto;
-    margin-right: 100px;
-    margin-left: 5px;
-}
 
-#parrafohome{
-    text-align: justify;
-    width: 60%;
+#parrhome{
+
     border: 3px solid green;
-    padding: 10px;
-    font-size: 2vw;
-    margin: 50px 40px 40px 100px;
-    
+ 
 }
 .redes{
     width: 2vw;
@@ -54,6 +44,40 @@ footer{
     margin-top: 4vw;
     background-color: #116B11;
 }
+/*ajustes en home grid*/
+.redes:hover{
+    color:#7a7a78;
+    width: 23px;
+
+}
+.padre{
+    display: grid;
+    grid-gap: 20px 20px;
+    grid-template-columns: 100%;
+    height: 100%;
+    grid-template-rows: 1em  10fr;
+    
+    background-color: rgb(250, 250, 250);
+    
+    
+}
+.hijo{
+    background: #ffffff;
+    padding: 10px;
+    color: rgb(1, 8, 14);
+    text-align: center;
+    overflow: auto;
+    font-size: 2rem;
+}
+.imagen img{
+    width: 100%;
+    height: auto;
+}
+.api {
+    background: #ffffff;
+    text-align: center;
+    font-size: 2rem;
+}
 .boton-form{ 
     background-color: #116B11;
     justify-content: center;
@@ -64,7 +88,14 @@ footer{
 .formulario{
     text-align: center;
 }
-
+.formulario{
+    margin: 10%;
+    background-color: #c9dde6;
+    padding: 60px;
+    border-radius: 30px;
+    text-align: center;
+    
+}
 
 /*Estilos para pagina about*/
 

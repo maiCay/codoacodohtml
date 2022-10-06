@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misiones</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+   </head>
+<body>
+    <header class="header">
+        <div class="encabezado">
+        <h1>Conocé Misiones</h1>
+        <nav>
+        <a href="index.html">Home</a>
+        <a href="ubicacion.html">Ubicación</a>
+        <a href="about.html">Acerca de</a>
+        </nav>
+        </div>
+    </header>
+    <main class="formulario">
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4 position-relative">
+              <label for="validationTooltip01" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="validationTooltip01" value="Su nombre es..." required>
+              <div class="valid-tooltip">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4 position-relative">
+              <label for="validationTooltip02" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="validationTooltip02" value="Escriba su apellido" required>
+              <div class="valid-tooltip">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-6 position-relative">
+              <label for="validationTooltip03" class="form-label">Ciudad</label>
+              <input type="text" class="form-control" id="validationTooltip03" required>
+              <div class="invalid-tooltip">
+                Please provide a valid city.
+              </div>
+            </div>
+            <div class="col-md-3 position-relative">
+              <label for="validationTooltip04" class="form-label">Provincia</label>
+              <select class="form-select" id="validationTooltip04" required>
+                <option selected>...</option>
+                    <option value="1">Buenos Aires.</option>
+                    <option value="2">Ciudad Autónoma de Buenos Aires.</option>
+                    <option value="3">Catamarca</option>
+                    <option value="4">Chaco</option>
+                    <option value="5">Chubut</option>
+                    <option value="6">Córdoba</option>
+                    <option value="7">Corrientes</option>
+                    <option value="8">Entre Ríos</option>
+                    <option value="9">Formosa</option>
+                    <option value="10">Jujuy</option>
+                    <option value="11">La Pampa</option>
+                    <option value="12">La Rioja</option>
+                    <option value="13">Mendoza</option>
+                    <option value="14">Misiones</option>
+                    <option value="15">Neuquén</option> <option value="1">One</option>
+                    <option value="16">Río Negro</option>
+                    <option value="17">Salta</option> <option value="1">One</option>
+                    <option value="18">San Juan</option>
+                    <option value="19">Santa Cruz</option>
+                    <option value="20">Santa Fe</option>
+                    <option value="21">Santiago del Estero</option> <option value="1">One</option>
+                    <option value="22">Tierra del Fuego, Antártida e Islas del Atlántico Sur</option>
+                    <option value="23">Tucumán</option>
+                </select>
+              <div class="invalid-tooltip">
+                Please select a valid state.
+              </div>
+            </div>
+            <div class="col-md-3 position-relative">
+              <label for="validationTooltip05" class="form-label">Código postal</label>
+              <input type="text" class="form-control" id="validationTooltip05" required>
+              <div class="invalid-tooltip">
+                selecciona un codigo postal valido.
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Enviar formulario</button>
+            </div>
+          </form>
+    </main>
+    <footer class="footer">
+        <p>Conocé más sobre nosotros en nuestras redes sociales: <br>
+            <a target="_blank" href="https:/facebook.com">
+                <img class="redes" src="./imagenes/facebook.png" alt="Facebook">
+            </a>
+            <a target="_blank" href="https:/www.instagram.com">
+                <img class="redes" src="./imagenes/instagram.png" alt="instagram">
+            </a>
+        </p>
+    </footer>
+</body>
+</html>
