@@ -67,16 +67,20 @@ footer{
     color: rgb(1, 8, 14);
     text-align: center;
     overflow: auto;
-    font-size: 2rem;
+    font-size: 1.2rem;
 }
-.imagen img{
-    width: 100%;
-    height: auto;
+.video {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+    width: calc(100% - 1rem);
 }
+
 .api {
     background: #ffffff;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.4rem;
 }
 .boton-form{ 
     background-color: #116B11;
