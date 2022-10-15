@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap');
+
+body{
+    font-family: 'Inter Tight', sans-serif !important; 
+}
+
 .encabezado{
     background-color: #116B11;
-    padding: 15px;
+    padding: 30px !important;
 }
 
 .encabezado h1{
@@ -10,14 +16,15 @@
     font-size: 5rem;
 }
 
-nav{
-    margin-top: 4px;
+.nav-header{
+    margin: 8px auto;
     padding: 2px;
     text-transform: uppercase;
     text-align: center;
+    /*background-color:rgb(1, 8, 14);*/
 }
 
-nav a{
+.nav-header a{
     color: #FFF;
     padding: 10px;
     text-decoration: none;
@@ -34,33 +41,43 @@ nav a:hover{
     border: 3px solid green;
  
 }
-.redes{
-    width: 2vw;
-    padding: 1.5%;
-    margin: 4px 4px 5px 4px;
-}
 footer{
     text-align: center;
-    margin-top: 4vw;
+    margin-top: 10px auto;
+    padding: 10px !important;
     background-color: #116B11;
 }
-/*ajustes en home grid*/
-.redes:hover{
-    color:#7a7a78;
-    width: 23px;
 
+footer > p {
+    color: black;
+    font-family: 'Inter Tight', sans-serif !important;
+    font-weight: bolder;
 }
+
+.nav-foot{
+    margin: 10px auto !important;
+    padding: 5px !important;
+}
+.redes{
+    width: 30px !important;
+    margin: 5px 5px;
+}
+
+.redes:hover{
+   transform: scale(1.3);
+}
+
+/*ajustes en home grid*/
+
 .padre{
     display: grid;
     grid-gap: 20px 20px;
     grid-template-columns: 100%;
     height: 100%;
     grid-template-rows: 1em  10fr;
-    
     background-color: rgb(250, 250, 250);
-    
-    
 }
+
 .hijo{
     background: #ffffff;
     padding: 10px;
@@ -82,6 +99,7 @@ footer{
     text-align: center;
     font-size: 1.4rem;
 }
+
 .boton-form{ 
     background-color: #116B11;
     justify-content: center;
@@ -89,12 +107,14 @@ footer{
     border: #FFF;
     color: #FFF;
 } 
+
 .formulario{
     text-align: center;
 }
+
 .formulario{
     margin: 10%;
-    background-color: background: rgb(228,197,34);
+    background-color:rgb(228,197,34);
     background: radial-gradient(circle, rgba(228,197,34,1) 0%, rgba(227,225,146,1) 100%);
     padding: 60px;
     border-radius: 30px;
@@ -104,6 +124,15 @@ footer{
 
 /*Estilos para pagina about*/
 
+#container-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 0 auto;
+}
+
 .center{
     text-align: center;
     font-size: 2em;
@@ -111,14 +140,20 @@ footer{
 
 .div-img {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 95vw;
+    max-width: 100%;
     height: 20%;
-    margin: 10px auto;
+    background-color: rgba(247, 235, 59, 0.4);
+    border-radius: 50px 15px 5px 30px;
+    margin: 5px auto;
     padding: 15px;
     gap: 15px;
+}
+
+.div-reverse{
+    background-color: rgba(17, 107, 17, 0.3);
+    border-radius:  15px 50px 30px 5px;
 }
 
 .img-ab{
@@ -137,12 +172,32 @@ footer{
 
 
 @media screen and (max-width: 600px) {
+
+    .encabezado{
+        max-width: 100vw;
+    }
+
+    .nav-header{
+       display: flex;
+       flex-direction: column;
+    }
+
+
+
+    #container-img{
+        max-width: 100vw;
+        margin: 0 auto;
+    }
+
     .div-img {
         flex-direction: column;
+        border-radius: 15px;
     }
 
     .div-reverse{
         flex-direction: column-reverse;
+        background-color: rgba(17, 107, 17, 0.3);
+        border-radius:  15px;
     }
 
     .img-ab{
