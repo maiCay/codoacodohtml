@@ -100,6 +100,19 @@ footer > p {
     font-size: 1.4rem;
 }
 
+.apps{
+    display: flex;
+    margin: 0 auto;
+}
+
+.container{
+    width: 25%;
+    height: 400px;
+    margin-top: 20px;
+    border: 2px solid black;
+    text-align: center;
+}
+
 .boton-form{ 
     background-color: #116B11;
     justify-content: center;
