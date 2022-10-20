@@ -121,19 +121,6 @@ footer > p {
     color: #FFF;
 } 
 
-.formulario{
-    text-align: center;
-}
-
-.formulario{
-    margin: 10%;
-    background-color:rgb(228,197,34);
-    background: radial-gradient(circle, rgba(228,197,34,1) 0%, rgba(227,225,146,1) 100%);
-    padding: 60px;
-    border-radius: 30px;
-    text-align: center;
-    
-}
 
 /*Estilos para pagina about*/
 

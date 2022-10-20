@@ -9,7 +9,7 @@ let encabezado =  `
     <a href="index.html">Home</a>
     <a href="about.html">Lugares</a>
     <a href="ubicacion.html">Nosotros</a>
-    <a href="registro.html">Contactanos</a>
+    <a href="newform.html">Contactanos</a>
 </nav>
 </div>
 `;
