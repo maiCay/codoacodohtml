@@ -25,45 +25,48 @@
                     La superficie de la Provincia es de 29.801 kilómetros cuadrados, tamaño que equivale a casi el 1% de la superficie total del país, pero concentra las mayores extensiones de selva protegida.
                 </p>
             </div>
-            <div class="hijo video">
-                <iframe width="1080" height="700" src="https://www.youtube.com/embed/qoIB7ZIbToc?start=70" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
+            <div class="hijo ventana">
+                <iframe class="video" width="1080" height="700" src="https://www.youtube.com/embed/qoIB7ZIbToc?start=70&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
             </div>
             <div class="hijo api">
-                <h2>Vea cómo estará el tiempo en Misiones en los próximos dias</h2>
+                <h2 class="subtitulo">Vea cómo estará el tiempo en Misiones en los próximos dias:</h2>
                 <div id="app1" class="apps">
                     <div class="container">
                         <h2>Iguazú</h2>
                         <br><br>
-                        <img class="icono" :src="`https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/${clima1.weather[0].icon}.svg`" alt="Icono del clima">
-            
+                        <img class="icono-clima" :src="`https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/${clima1.weather[0].icon}.svg`" alt="Icono del clima">
                         <p>{{clima1.weather[0].description}}</p>
-            
-                        <p>{{Math.round(clima1.main.temp)}}°C</p>
+                        <br><br>
+                        <p class="temperatura">{{Math.round(clima1.main.temp)}}°C</p>
+                        <br><br>
                         <p>Sensacion de: {{Math.round(clima1.main.feels_like)}}°C</p>
+                        <br>
                         <p>Min. {{Math.round(clima1.main.temp_min)}}°C / Max. {{Math.round(clima1.main.temp_max)}}°C </p>
                     </div>
             
                     <div class="container">
                         <h2>San Ignacio</h2>
                         <br><br>
-                        <img :src="`https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/${clima2.weather[0].icon}.svg`" alt="Icono del clima">
-            
+                        <img class="icono-clima" :src="`https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/${clima2.weather[0].icon}.svg`" alt="Icono del clima">
                         <p>{{clima2.weather[0].description}}</p>
-            
-                        <p>{{Math.round(clima2.main.temp)}}°C</p>
+                        <br><br>
+                        <p class="temperatura">{{Math.round(clima2.main.temp)}}°C</p>
+                        <br><br>
                         <p>Sensacion de: {{Math.round(clima2.main.feels_like)}}°C</p>
+                        <br>
                         <p>Min. {{Math.round(clima2.main.temp_min)}}°C / Max. {{Math.round(clima2.main.temp_max)}}°C </p>
                     </div>
         
-                    <div class="container">
+                    <div class="container verde">
                         <h2>El soberbio</h2>
                         <br><br>
-                        <img :src="`https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/${clima3.weather[0].icon}.svg`" alt="Icono del clima">
-            
+                        <img class="icono-clima" :src="`https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/${clima3.weather[0].icon}.svg`" alt="Icono del clima">
                         <p>{{clima3.weather[0].description}}</p>
-            
-                        <p>{{Math.round(clima3.main.temp)}}°C</p>
-                        <p>Sensacion de: {{Math.round(clima3.main.feels_like)}}°C</p>
+                        <br><br>
+                        <p class="temperatura">{{Math.round(clima3.main.temp)}}°C</p>
+                        <br><br>
+                        <p>Sensacion de:{{Math.round(clima3.main.feels_like)}}°C</p>
+                        <br>
                         <p>Min. {{Math.round(clima3.main.temp_min)}}°C / Max. {{Math.round(clima3.main.temp_max)}}°C </p>
                     </div>
                 </div>
