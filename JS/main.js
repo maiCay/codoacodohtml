@@ -19,13 +19,12 @@ header.innerHTML= encabezado;
 let rodapie = `
 <p>Conocé más sobre nosotros en nuestras redes sociales:</p>
 <nav class="nav-foot">
-    <a target="_blank" href="https:/facebook.com">
-        <img class="redes" src="./imagenes/facebook.png" alt="Facebook">
-    </a>
-    <a target="_blank" href="https:/www.instagram.com">
-        <img class="redes" src="./imagenes/instagram.png" alt="instagram">
-    </a>
+    <a href="https:/facebook.com" target="_blank"><img class="redes" src="./imagenes/facebook.png" alt="Facebook"></a>
+    <a href="https:/www.instagram.com" target="_blank"><img class="redes" src="./imagenes/instagram.png" alt="instagram"></a>
+    <a href="https://github.com/maiCay/codoacodohtml" target="_blank"><img class="redes" src="./imagenes/github.png" alt="Github"></a>
 </nav>
+<p>&#169 Copyright 2022 / Kena Matzenbacher - Jesica Machetti - Maira Cayano</p>
+<br>
 `;
 
 footer.innerHTML= rodapie;
