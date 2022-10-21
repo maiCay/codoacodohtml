@@ -44,6 +44,17 @@ nav a:hover{
     padding: 17px;
 }
 
+.ancla{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.flecha{
+    width: 25px;
+}
+
 footer{
     text-align: center;
     margin-top: 10px auto;
@@ -207,7 +218,7 @@ footer > p {
 
 .container-exp{
     width: 100vw;
-    margin: 100px auto;
+    margin: 30px auto;
     justify-content: center;
     align-items: center;
 }
@@ -216,6 +227,7 @@ footer > p {
     display: flex;
     justify-content: space-around;
     max-width: 100%;
+    padding: 20px;
 }
 
 .experiencias li{
@@ -223,11 +235,11 @@ footer > p {
     flex-direction: column;
     text-align: justify;
     width: 20%;
-    height: 400px;
+    min-height: 450px;
+    height: auto;
     vertical-align: top;
-    padding: 25px;
+    padding: 15px;
     border: 2px solid rgba(8, 140, 25, 0.2);
-    box-sizing: border-box;
     border-radius: 10px;
     background-color: rgba(8, 140, 25, 0.3);
     transition: 1s;
@@ -255,15 +267,14 @@ img{
 }
 
 .estrella{
-    width: 35px;
+    width: 30px;
 }
-
 
 
 @media screen and (max-width: 768px){
 
     .encabezado{
-        max-width: 100vw;
+       max-width: 100vw;
     }
 
     .nav-header{
@@ -298,6 +309,7 @@ img{
         margin: 8px auto;
         box-sizing: border-box;
     }
+
 
     /*pag lugares*/
 
@@ -341,6 +353,10 @@ img{
         margin-top: auto;
         padding: 20px;
     }
+
+    .mapa{
+        max-width: 90%;
+    }
 }
 
 
@@ -371,19 +387,37 @@ img{
 }
 .h2-ubicacion{
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.7em;
     text-align: center;
 }
 .texto2{
     font-weight: bold;
- text-align: center;
- margin-top: auto;
- font-size: 1.5em;
+    text-align: center;
+    margin: 20px auto;
+    font-size: 1.5em;
+    
+  
 }
 .texto3{
     text-align: center;
+    line-height: 1.5em;
+    font-size: 1.1em;
+    padding: 10px;
+    width: 80vw;
 }
 .mapa{
- display: block;
- margin: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+    .experiencias{
+        flex-wrap: wrap;
+    }
+
+    .experiencias li{
+       width: 40%;
+       margin-top: 20px;
+    }
+    
 }
