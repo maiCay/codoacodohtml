@@ -7,7 +7,7 @@ Para realizarlo utilizamos HTML5, CSS3, Bootstrap, Vue.js y JavaScript.
 
 Nos enfocamos en que nuestra pagina sea responsiva 📲 en su totalidad, para ello utilizamos Grid, Flexbox y media queries para diferentes cortes.
 
-Incorporamos una Api que es consumida a traves de Vue.js con el metodo Fetch, con la cual armamos tarjetas para saber el estado del clima.⛅☔
+Incorporamos una API que es consumida a traves de Vue.js con el metodo Fetch, con la cual armamos tarjetas para saber el estado del clima.⛅☔
 
 
 Realizamos un formulario para registro de clientes, el cual es validado mediante JavaScript.💡
