@@ -39,8 +39,14 @@
 	padding: 0 40px 0 10px;
 	transition: .3s ease all;
 }
+
 .formulario__radio{
-	width: 89px;
+	align-content: space-around;
+	text-align: initial;
+	align-items: initial;
+}
+.formulario__radio>input{
+	
 }
 .form-select{
 	width: 100%;
