@@ -22,7 +22,8 @@ const campos = {
 	destino: false,
 	pasajeros: false,
 	salida: false,
-	sinfecha: false
+	sinfecha: false,
+	verificar: false
 }
 
 
@@ -75,8 +76,10 @@ function verificarBoton(){
 function verificarLista(){
 	var provincias = document.getElementById('provincias');
 	if (provincias.value == "" ){
+		console.log("provincias false");
 		return campos.provincias=false;
  }else{
+	console.log("provincias true");
 	return campos.provincias = true;
  }
 }
@@ -100,13 +103,19 @@ function verificarPasajeros(){
 }
 function verificarSinfecha(){
 	var sinfecha = document.getElementById('sinfecha');
-	var salida = document.getElementById('salida')
+	var salida = document.getElementById('salida');
+	
 	if (sinfecha.checked && salida.value){
+		console.log("sin fecha false");
 		document.getElementById("sinfecha").checked = false ;
+		campos.salida= true;
 		return campos.sinfecha = false;
- }else{
+ 	}else{
+		campos.salida= false;
 	return campos.sinfecha = true;
- }
+ 	}
+	
+ 	
 }
 
 function validarFechaSalida(){
@@ -119,6 +128,7 @@ function validarFechaSalida(){
 	if(salida.value){
 		document.getElementById("sinfecha").checked = false ;
 		campos.salida = true;
+		console.log("salida true");
 		return campos.sinfecha = false;
 	}else{
 		document.getElementById("sinfecha").checked = true ;
@@ -139,16 +149,26 @@ function validarFechas(){
 	if(salida.value){
 		console.log("salida seleccionado");
 		campos.salida = true;
-		
+		m=0;
 	}else{
 		campos.salida = false;
+		m=1;
 	}
 	var sinfecha = document.getElementById('sinfecha');
 	if (sinfecha.checked){
 		console.log("seleccionaste sin fecha");
-		campos.sinfecha = true;	
+		campos.sinfecha = true;
+		f=0;	
 	}else{
 		campos.sinfecha = false;
+		f=1;
+	}
+	if(m==0 && f==1){
+		console.log("verificar esta en true con salida seleccionado");
+		return campos.verificar = true;
+	}else if(m==1 && f==0){
+		console.log("verificar esta en true con sin fecha seleccionado");
+		return campos.verificar = true;
 	}
 }
 inputs.forEach((input) => {
@@ -158,9 +178,10 @@ inputs.forEach((input) => {
 
 formulario.addEventListener('submit', (e) => {
 	e.preventDefault();
+	validarFechas();
 
 	const terminos = document.getElementById('terminos');
-	if(campos.viajar && campos.apellido && campos.nombre && campos.ciudad && campos.correo  && campos.provincias  && campos.destino && campos.pasajeros && terminos.checked && campos.sinfecha ||  campos.salida){
+	if(campos.viajar && campos.nombre && campos.apellido && campos.ciudad && campos.correo  && campos.provincias  && campos.destino  && campos.pasajeros && campos.verificar && terminos.checked  ){
 		formulario.reset();
 
 		document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');

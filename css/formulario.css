@@ -42,12 +42,10 @@
 
 .formulario__radio{
 	align-content: space-around;
-	text-align: initial;
+	text-align: center;
 	align-items: initial;
 }
-.formulario__radio>input{
-	
-}
+
 .form-select{
 	width: 100%;
 	background: #fff;
