@@ -1,22 +1,23 @@
 * {
 	box-sizing: border-box;
 }
+
+.texto2{
+    font-weight: bold;
+    text-align: center;
+    margin: 30px auto;
+    font-size: 1.5em;
+	max-width: 90vw;
+}
 .mainformato{
-	margin: 50px;
+	max-width: 70vw;
+	margin: 40px auto;
     background-color:rgb(228,197,34);
     background: radial-gradient(circle, rgba(228,197,34,1) 0%, rgba(227,225,146,1) 100%);
-    padding: 60px;
+    padding: 30px;
     border-radius: 30px;
     text-align: center;
 }
-/*.formulario {
-	margin: 10%;
-    background-color:rgb(228,197,34);
-    background: radial-gradient(circle, rgba(228,197,34,1) 0%, rgba(227,225,146,1) 100%);
-    padding: 60px;
-    border-radius: 30px;
-    text-align: center;
-}*/
 
 .formulario__label {
 	display: inline-flex;
@@ -25,9 +26,6 @@
 	cursor: pointer;
 }
 
-/*.formulario__grupo-input {
-	position: relative;
-}*/
 
 .formulario__input {
 	width: 100%;
@@ -39,13 +37,9 @@
 	padding: 0 40px 0 10px;
 	transition: .3s ease all;
 }
-
 .formulario__radio{
-	align-content: space-around;
-	text-align: center;
-	align-items: initial;
+	width: 89px;
 }
-
 .form-select{
 	width: 100%;
 	background: #fff;
@@ -55,6 +49,12 @@
 	line-height: 45px;
 	padding: 0 40px 0 10px;
 	transition: .3s ease all;
+}
+
+#pasajeros{
+	width: 50%;
+	margin: 10px auto;
+	text-align: center;
 }
 
 
@@ -122,7 +122,6 @@
 	width: 30%;
 	background: #116B11;
 	color: #fff;
-	font-weight: bold;
 	border: none;
 	border-radius: 3px;
 	cursor: pointer;
@@ -161,26 +160,3 @@
 .formulario__grupo-incorrecto .formulario__input {
 	border: 3px solid #bb2929;
 }
-
-
-/* ----- -----  Mediaqueries ----- ----- */
-/*
-@media screen and (max-width: 760px) {
-	.formulario {
-		grid-template-columns: 1fr;
-	}
-
-	.formulario__grupo-terminos, 
-	.formulario__mensaje,
-	.formulario__grupo-btn-enviar {
-		grid-column: 1;
-	}
-
-	.formulario__btn {
-		width: 100%;
-	}
-}
-@media screen and (min-width: 760px) {
-	
-
-}*/
