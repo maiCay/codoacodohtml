@@ -157,15 +157,6 @@ footer > p {
     width: 50%;
 }
 
-.boton-form{ 
-    background-color: #116B11;
-    justify-content: center;
-    width: 100%;
-    border: #FFF;
-    color: #FFF;
-} 
-
-
 /*Estilos para pagina about*/
 
 #container-img{
@@ -216,6 +207,23 @@ footer > p {
 
 /* Estilos pag nosotros*/
 
+.h2-ubicacion{
+    font-weight: bold;
+    font-size: 1.7em;
+    text-align: center;
+}
+
+.texto3{
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 1.1em;
+    padding: 10px;
+    width: 80vw;
+}
+.h3usuarios{
+    font-weight: bold;
+  }
+  
 .container-exp{
     width: 100vw;
     margin: 30px auto;
@@ -269,6 +277,12 @@ img{
 .estrella{
     width: 30px;
 }
+
+.mapa{
+    display: block;
+    margin: 0 auto;
+}
+
 
 
 @media screen and (max-width: 768px){
@@ -334,6 +348,7 @@ img{
     }
 
     /*tarjetas*/
+
     .container-exp{
         max-width: 100vw;
     }
@@ -382,33 +397,6 @@ img{
     }
 }
 
-.h3usuarios{
-  font-weight: bold;
-}
-.h2-ubicacion{
-    font-weight: bold;
-    font-size: 1.7em;
-    text-align: center;
-}
-.texto2{
-    font-weight: bold;
-    text-align: center;
-    margin: 20px auto;
-    font-size: 1.5em;
-    
-  
-}
-.texto3{
-    text-align: center;
-    line-height: 1.5em;
-    font-size: 1.1em;
-    padding: 10px;
-    width: 80vw;
-}
-.mapa{
-    display: block;
-    margin: 0 auto;
-}
 
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
     .experiencias{
